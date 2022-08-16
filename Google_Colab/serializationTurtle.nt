@@ -1,0 +1,55 @@
+@prefix ns1: <http://www.exp.org/Action/> .
+@prefix ns2: <http://www.exp.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://dbpedia.org/resource/COVID-19_vaccine_development> ns1:producing "vaccine@en" ;
+    ns2:label "vaccine_development@en" ;
+    owl:Type owl:Thing .
+
+<http://www.dbpedia.org/resource/nhs> ns1:who_has <http://www.dbpedia.org/resource/COVID_19_vaccine> ;
+    owl:Type owl:Thing .
+
+<http://www.dbpedia.org/resource/uk> ns1:approved <http://www.dbpedia.org/resource/COVID_19_vaccine> ;
+    owl:Type owl:Thing .
+
+ns2:Messager ns1:contained <http://www.dbpedia.org/resource/COVID_19_vaccine> .
+
+<http://www.exp.org/Noun/discussion> ns1:evaluate <http://www.dbpedia.org/resource/COVID_19_vaccine> .
+
+<http://www.exp.org/Noun/hub> ns1:looking_for <http://www.dbpedia.org/resource/COVID_19_vaccine> .
+
+<http://www.exp.org/Noun/incidence> ns1:compare ns2:vaccination .
+
+<http://www.exp.org/Noun/modeling> ns1:recommending ns2:vaccination .
+
+<http://www.exp.org/Noun/people> ns1:get_vaccine <http://www.dbpedia.org/resource/COVID_19_vaccine> .
+
+<http://www.exp.org/Noun/regime> ns1:characterized <http://www.dbpedia.org/resource/COVID_19_vaccine> .
+
+<http://www.exp.org/Noun/rights> ns1:provide ns2:vaccination .
+
+ns2:companies ns1:produce <http://www.dbpedia.org/resource/COVID_19_vaccine> .
+
+ns2:people ns1:very <http://www.dbpedia.org/resource/COVID_19_vaccine> .
+
+ns2:strategy ns1:prioritized <http://www.dbpedia.org/resource/COVID_19_vaccine> .
+
+<http://www.dbpedia.org/resource/COVID_19_vaccine> ns1:Action [ ] ;
+    ns1:accounting <http://www.dbpedia.org/resource/COVID_19_vaccine> ;
+    ns1:bad_affects [ ] ;
+    ns1:be ns1:infectious,
+        "leaky@en" ;
+    ns1:distribution [ ] ;
+    ns1:features [ ] ;
+    ns1:function <http://www.dbpedia.org/resource/virus> ;
+    ns1:go <http://www.exp.org/Noun/Phase> ;
+    ns1:include [ ] ;
+    ns1:need ns1:shot ;
+    ns1:not_suit <http://www.exp.org/Noun/pregnant_woman> ;
+    ns1:side_affect <http://www.exp.org/Noun/populations> ;
+    ns1:take <http://www.dbpedia.org/resource/COVID_19_vaccine> ;
+    ns1:vaccinated [ ] ;
+    ns2:label "vaccine_phase@en",
+        "vaccine_tested@en" ;
+    owl:Type owl:Thing .
+
